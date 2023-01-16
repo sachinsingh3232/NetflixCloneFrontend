@@ -1,2 +1,2 @@
 // export const BASE_URL="http://localhost:5000"
-export const BASE_URL="https://netflixclonebackend-xhy5.onrender.com"
+export const BASE_URL="https://netflix-clone-backend-ashy.vercel.app"
