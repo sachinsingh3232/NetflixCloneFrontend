@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.list {
+  flex: 4;
+  /* padding: 20px; */
+}
+
+.listTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listAddButton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.listTop {
+  display: flex;
+}
+
+.listTopRight {
+  flex: 1;
+}
+
+.listTopRight {
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.listInfoImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.listInfoTop {
+  display: flex;
+  align-items: center;
+}
+
+.listName {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.listInfoBottom {
+  margin-top: 10px;
+}
+
+.listInfoItem {
+  width: 250px;
+  display: flex;
+  justify-content: space-between
+}
+
+.listInfoValue {
+  font-weight: 300;
+}
+
+.listBottom {
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.listForm {
+  display: flex;
+  flex-wrap: wrap;
+}
+.updateListItem {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.updateListItem > label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.updateListItem > input {
+  padding: 10px;
+}
+
+.updateListItem > select {
+  padding: 10px;
+}
+
+
+.updateListButton {
+  height: 40px;
+  margin-top: 10px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: center;
+}

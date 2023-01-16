@@ -1,0 +1,64 @@
+.NewUsers{
+    flex:0.5;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 100px;
+}
+
+.NewUsersTitle{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.NewUsersImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.NewUsersList{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.NewUsersListItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.NewUsersUser{
+    display: flex;
+    flex-direction: column;
+}
+
+.NewUsersUsername{
+    font-weight: 600;
+}
+
+.NewUsersUserTitle{
+    font-weight: 300;
+}
+
+.NewUsersButton{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 10px;
+    background-color: #eeeef7;
+    color: #555;
+    cursor: pointer;
+}
+
+.NewUsersIcon{
+    font-size: 16px !important;
+    margin-right: 5px;
+}

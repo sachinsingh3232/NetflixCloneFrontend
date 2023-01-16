@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    margin-top: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+.adminHome{
+    flex: 4;
+    background-color: white;
+}
+
+.homeNewUsers{
+    display: flex;
+    margin: 20px;
+}
