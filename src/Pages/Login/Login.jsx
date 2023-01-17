@@ -19,7 +19,7 @@ const Login = ({ setUser, Message, setMessage, user }) => {
             const response = await axios.post(`${BASE_URL}/netflix/user/login`, {
                 "email": email,
                 "password": password
-            }, { headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin":"https://netflixclone-backend.vercel.app", }, withCredentials: true }
+            }, { headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin":"*", }, withCredentials: true }
             )
             localStorage.setItem("user", JSON.stringify(response.data.data))
             setMessage(response.data.message)
