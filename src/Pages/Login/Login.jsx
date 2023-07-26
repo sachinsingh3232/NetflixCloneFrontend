@@ -31,6 +31,7 @@ const Login = ({ setUser, Message, setMessage, user }) => {
     }
     const loginHandler = (e) => {
         e.preventDefault();
+        alert('Checking Credentials Please wait !')
         login();
         navigate("/");
     }
