@@ -14,7 +14,7 @@ const Admin = ({ Message, setMessage, setUser, user }) => {
                 "password": password
             }, { headers: { "Content-Type": "application/json" }, withCredentials: true }
             )
-            response.data.data?setUser(response.data.data);
+            response.data.data?setUser(response.data.data):setUser(null);
             setMessage(response.data.message);
         } catch (e) {
             // console.log(e);
