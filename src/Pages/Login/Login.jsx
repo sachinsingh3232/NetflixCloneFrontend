@@ -22,7 +22,7 @@ const Login = ({ setUser, Message, setMessage, user }) => {
             }, { headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin":"*", }, withCredentials: true }
             )
             setMessage(response.data.message)
-            setUser(response.data.data)
+            response.data.data?setUser(response.data.data):setUser(null)
         } catch (e) {
             // console.log(e);
             setUser(null)
