@@ -15,7 +15,7 @@ const Navbar = ({ setUser, setMessage }) => {
     try {
       const response = await axios.get(`${BASE_URL}/netflix/user/logout`, { headers: { "Content-Type": "application/json" }, withCredentials: true }
       )
-      setMessage(response.data.message)
+      await setMessage(response.data.message)
     } catch (e) {
       // console.log(e)
     }
