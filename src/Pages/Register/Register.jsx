@@ -24,6 +24,7 @@ const Register = ({ setMessage, user }) => {
     }
     const handleFinish = (e) => {
         registerUser();
+        alert('Please wait !')
         navigate('/login')
     }
     const handleStart = () => {
