@@ -4,7 +4,7 @@ import Home from './Pages/Home/Home';
 import Register from './Pages/Register/Register';
 import Login from './Pages/Login/Login';
 import Watch from './Pages/Watch/Watch'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Admin from './Pages/Admin/Admin';
 import AdminHome from './Pages/AdminHome/AdminHome'
 import MovieList from './Pages/Movies/MovieList';
@@ -16,7 +16,10 @@ import NewList from './Pages/NewList/NewList';
 import UserList from './Pages/UserList/UserList'
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || null);
+  useEffect(() => {
+        localStorage.setItem("user", JSON.stringify(currentUser));
+    }, [user])
   const [Message, setMessage] = useState()
   return (
     <Router>
