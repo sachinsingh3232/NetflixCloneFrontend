@@ -18,7 +18,7 @@ import UserList from './Pages/UserList/UserList'
 function App() {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || null);
   useEffect(() => {
-        localStorage.setItem("user", JSON.stringify(currentUser));
+        localStorage.setItem("user", JSON.stringify(user));
     }, [user])
   const [Message, setMessage] = useState()
   return (
