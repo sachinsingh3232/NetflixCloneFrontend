@@ -21,7 +21,6 @@ const Login = ({ setUser, Message, setMessage, user }) => {
                 "password": password
             }, { headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin":"*", }, withCredentials: true }
             )
-            localStorage.setItem("user", JSON.stringify(response.data.data))
             setMessage(response.data.message)
             setUser(response.data.data)
         } catch (e) {
