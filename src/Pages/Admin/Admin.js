@@ -14,8 +14,7 @@ const Admin = ({ Message, setMessage, setUser, user }) => {
                 "password": password
             }, { headers: { "Content-Type": "application/json" }, withCredentials: true }
             )
-            localStorage.setItem("user", JSON.stringify(response.data.data))
-            setUser(response.data.data);
+            response.data.data?setUser(response.data.data);
             setMessage(response.data.message);
         } catch (e) {
             // console.log(e);
