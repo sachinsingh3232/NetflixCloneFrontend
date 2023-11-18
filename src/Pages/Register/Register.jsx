@@ -12,6 +12,7 @@ const Register = ({ setMessage, user }) => {
     const [password, setPassword] = useState();
     const registerUser = async () => {
         try {
+            console.log("registerUser")
             const res = await axios.post(`${BASE_URL}/netflix/user/register`, {
                 "email": email,
                 "password": password
@@ -23,11 +24,13 @@ const Register = ({ setMessage, user }) => {
         }
     }
     const handleFinish = (e) => {
+        console.log("handleF")
         registerUser();
         alert('Please wait !')
         navigate('/login')
     }
     const handleStart = () => {
+        console.log("HandleS")
         setEmail(emailref.current.value);
     }
     return (
