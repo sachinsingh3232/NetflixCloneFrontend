@@ -14,8 +14,14 @@ const Login = ({ setUser, Message, setMessage, user }) => {
     const handleClick = () => {
         navigate("/register");
     }
-    const login = async (e) => {
+    // const login = async (e) => {
+        
+    // }
+    const loginHandler = async(e) => {
         e.preventDefault();
+        alert('Checking Credentials Please wait !')
+        // login(e);
+        // e.preventDefault();
         try {
             const response = await axios.post(`${BASE_URL}/netflix/user/login`, {
                 "email": email,
@@ -24,16 +30,11 @@ const Login = ({ setUser, Message, setMessage, user }) => {
             )
             setMessage(response.data.message)
             response.data.data?setUser(response.data.data):setUser(null)
+            navigate("/");
         } catch (e) {
             // console.log(e);
             setUser(null)
         }
-    }
-    const loginHandler = (e) => {
-        e.preventDefault();
-        alert('Checking Credentials Please wait !')
-        login(e);
-        navigate("/");
     }
     const admin = () => {
         setMessage("");
